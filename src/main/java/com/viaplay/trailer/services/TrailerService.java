@@ -8,6 +8,7 @@ import com.viaplay.trailer.exceptions.ViaplayInvalidResponseException;
 import com.viaplay.trailer.model.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static com.viaplay.trailer.constants.ResponseStatusMsgs.*;
@@ -79,6 +80,7 @@ public class TrailerService {
     public static TrailerResult getErrorTrailerResult(StatusCode statusCode, String statusReason){
         return TrailerResultBuilder.aTrailerResult()
                 .withStatus(new Status(statusCode, statusReason))
+                .withTrailers(Collections.EMPTY_LIST)
                 .build();
     }
 }
