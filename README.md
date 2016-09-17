@@ -4,6 +4,9 @@ Provide clients with Trailer URL for a provided ViaPlay movie resource link.
 Git Install site
 https://git-scm.com/download/win
 
+Gradle Install site
+https://gradle.org/getting-started-gradle-java/
+
 #Steps to install
 
 git clone https://github.com/chubbysabs/ViaPlay-TrailerService.git
